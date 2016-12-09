@@ -34,11 +34,15 @@ branch.init('key_live_cbwoLGa9GX0hlVKQN1JZfhglwvaazs2r');
         </script>
     </head>
     <body>
+        <div class="container">
     	Send SMS
+        <div class="form-group">
         <form onsubmit="sendSMS(this); return false;">
-        	<input id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
+        	<input class="form-control" id="phone" name="phone" type="tel" placeholder="(650) 123-4567" />
         	<br/>
-        	<input type="submit"/>
+        	<button class="btn btn-default" type="submit"/>
         </form>
+        </div>
+        </div>
     </body>
 </html>
