@@ -40,6 +40,7 @@
     branch.link({
     tags: [ '2Year', 'Savings','MSM','Fixed' ],
     channel: 'Aggregator',
+    alias: '2YRFIXEDMSM',
     campaign: 'MoneySuperMarket',
     feature: 'Savings Referral',
     stage: 'Landing Page',
@@ -51,6 +52,7 @@
     }
 }, function(err, link) {
     console.log(err, link);
+        $("#applylink").attr("href", link);
 });
 </script>
 </html>
