@@ -13,12 +13,9 @@ branch.init('key_live_cbwoLGa9GX0hlVKQN1JZfhglwvaazs2r');
             function sendSMS(form) {
                 var phone = form.phone.value;
                 var linkData = {
-                    tags: [],
+                    tags: ['Web Refer'],
                     channel: 'Website',
-                    feature: 'TextMeTheApp',
-                    data: {
-                        'foo': 'bar'
-                    }
+                    feature: 'TextMeTheApp'
                 };
                 var options = {};
                 var callback = function(err, result) {
