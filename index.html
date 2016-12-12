@@ -34,7 +34,24 @@
 
     branch.init('key_live_cbwoLGa9GX0hlVKQN1JZfhglwvaazs2r', function(err, data) {
         // callback to handle err or data
-        console.log(err,data);
+        console.log("Initialisation:",err,data);
     });
+        
+    branch.link({
+    tags: [ '2Year', 'Savings','MSM','Fixed' ],
+    channel: 'Aggregator',
+    campaign: 'MoneySuperMarket',
+    feature: 'Savings Referral',
+    stage: 'Landing Page',
+    alias: 'MSM2YrFixed',
+    data: {
+        Product: 'Savings',
+        ProductID: '22'
+        '$custom_sms_text': 'Click the following link to download our app and apply to our 2 year fixed saver! {{ link }}',
+        
+    }
+}, function(err, link) {
+    console.log(err, link);
+});
 </script>
 </html>
