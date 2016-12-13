@@ -28,7 +28,7 @@ if (data.data['~referring_link']) {
                         alert("Sorry, something went wrong.");
                     }
                     else {
-                        alert("SMS sent!");
+                       window.location.href = 'smssuccess.html'
                     }
                 };
                 branch.sendSMS(phone, linkData, options, callback);
